@@ -161,6 +161,19 @@ exhaustion), concurrency/isolation/ordering, gold never entering payloads, and A
 database persistence and joined retrieval for successful, empty and error answers (run against a real
 local Postgres test database).
 
+## Live API check
+
+`evidence/api_live.txt` shows the FastAPI service running locally against live Gemini and Postgres:
+- `POST /classify` on A07 (v2) returned 200 with 8 claims whose spans and labels all match the gold.
+- `POST /classify` on A41 returned 502 `invalid_output`, the same failure v2 had on A41 in the check run.
+- A gold field in the request body returned 422, and an unknown primary brand returned 404.
+- `GET /evaluation-runs/{id}` returned the joined run, answers and claims for the saved v1
+  development and v2 check runs.
+- A missing run returned 404, and an invalid UUID returned 422.
+
+`POST /evaluation-runs` was tested with the fake provider. The live runs used the same `run_evaluation`
+function through the command line.
+
 ## Langfuse evidence
 
 Project traces (EU cloud): one trace per answer per run, session = run ID, tagged with agent version

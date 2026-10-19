@@ -1,0 +1,183 @@
+== POST /classify (live Gemini, v2, check answer A41)
+HTTP 502
+{
+ "error": {
+  "type": "invalid_output",
+  "message": "invalid sentence_index None"
+ }
+}
+
+== POST /classify with a gold field -> 422
+HTTP 422
+{
+ "detail": [
+  {
+   "type": "extra_forbidden",
+   "loc": [
+    "body",
+    "expected_label"
+   ],
+   "msg": "Extra inputs are not permitted",
+   "input": "supported"
+  }
+ ]
+}
+
+== POST /classify unknown primary brand -> 404
+HTTP 404
+{
+ "error": {
+  "type": "unknown_brand",
+  "message": "unknown primary brand_id 'rivalsound'"
+ }
+}
+
+== GET /evaluation-runs/{v1 development run}
+HTTP 200
+{
+ "run_id": "cc549125-64c0-4064-9b27-5e8e272bc7f3",
+ "split": "development",
+ "agent_version": "v1",
+ "status": "completed",
+ "counts": {
+  "C": 256,
+  "G": 376,
+  "M": 269,
+  "P": 300,
+  "answers": 40,
+  "answer_errors": 9
+ },
+ "answers": 40,
+ "first_answer": {
+  "answer_id": "A01",
+  "status": "error",
+  "error_type": "invalid_output",
+  "claim_count": 0
+ },
+ "first_claim": null
+}
+
+== GET /evaluation-runs/{v2 check run}
+HTTP 200
+{
+ "run_id": "f9b12bbd-b52e-48f8-9c98-d984960d8447",
+ "split": "check",
+ "agent_version": "v2",
+ "status": "completed",
+ "counts": {
+  "C": null,
+  "G": null,
+  "M": null,
+  "P": 64,
+  "answers": 10,
+  "answer_errors": 2
+ },
+ "answers": 10,
+ "first_answer": {
+  "answer_id": "A41",
+  "status": "error",
+  "error_type": "invalid_output",
+  "claim_count": 0
+ },
+ "first_claim": null
+}
+
+== GET /evaluation-runs/{random uuid} -> 404
+HTTP 404
+{
+ "error": {
+  "type": "not_found",
+  "message": "run 00000000-0000-4000-8000-000000000000 not found"
+ }
+}
+
+== GET /evaluation-runs/not-a-uuid -> 422
+HTTP 422
+{
+ "detail": [
+  {
+   "type": "uuid_parsing",
+   "loc": [
+    "path",
+    "run_id"
+   ],
+   "msg": "Input should be a valid UUID, invalid character: found `n` at 0",
+   "input": "not-a-uuid",
+   "ctx": {
+    "error": "invalid character: found `n` at 0"
+   }
+  }
+ ]
+}
+
+== POST /classify (live Gemini, v2, development answer A07)
+HTTP 200
+{
+ "answer_id": "A07",
+ "agent_version": "v2",
+ "claims": [
+  {
+   "claim_id": "A07:306:511",
+   "label": "unknown",
+   "fact_ids": [
+    "cleartrail.plus.warranty_india"
+   ],
+   "reason": "Catalogue facts do not specify warranty terms for retail purchases in Germany."
+  },
+  {
+   "claim_id": "A07:512:698",
+   "label": "unknown",
+   "fact_ids": [
+    "cleartrail.plus.bluetooth_version"
+   ],
+   "reason": "Catalogue facts do not specify supported audio codecs such as AAC."
+  },
+  {
+   "claim_id": "A07:700:884",
+   "label": "contradicted",
+   "fact_ids": [
+    "cleartrail.plus.stereo_pairing_scope"
+   ],
+   "reason": "Catalogue facts specify cross-model stereo pairing is unsupported."
+  },
+  {
+   "claim_id": "A07:987:1153",
+   "label": "supported",
+   "fact_ids": [
+    "cleartrail.plus.immersion_depth",
+    "cleartrail.plus.immersion_duration"
+   ],
+   "reason": "Catalogue facts confirm fresh water immersion up to one metre for up to thirty minutes with port covers closed."
+  },
+  {
+   "claim_id": "A07:1350:1533",
+   "label": "supported",
+   "fact_ids": [
+    "cleartrail.plus.weight"
+   ],
+   "reason": "Catalogue facts confirm a weight of 580 grams, which equals 0.58 kilograms, excluding accessories and packaging."
+  },
+  {
+   "claim_id": "A07:1534:1719",
+   "label": "supported",
+   "fact_ids": [
+    "cleartrail.plus.app_required_bluetooth"
+   ],
+   "reason": "Catalogue facts confirm basic Bluetooth playback does not require the companion app."
+  },
+  {
+   "claim_id": "A07:1721:1919",
+   "label": "unknown",
+   "fact_ids": [],
+   "reason": "Catalogue facts contain no information regarding enclosure plastic material composition."
+  },
+  {
+   "claim_id": "A07:1920:2143",
+   "label": "contradicted",
+   "fact_ids": [
+    "cleartrail.plus.water_damage_covered"
+   ],
+   "reason": "Catalogue facts state water damage is not covered by the standard manufacturer warranty."
+  }
+ ]
+}
