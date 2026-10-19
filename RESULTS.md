@@ -261,9 +261,11 @@ Evidence for reviewers without Langfuse access:
 
 ## Time, AI assistance and verification
 
-- **Time spent:** About 2.5 hours in total. Roughly 30 minutes reading the brief and planning, 30 minutes
-on environment and provider setup (API keys, Anthropic billing blocker, Gemini quota and timeout issues, Postgres, Langfuse), 1.5 hours building the agent, harness, API, database and tests, and
-1/2 hour on the four live runs, the v2 iteration, error analysis and the write-up. This is somewhat over the 2–3 hour guideline; the overrun was mainly provider setup and quota limits.
+- **Time spent:** About 2.5 hours in total. Roughly 30 minutes reading the brief and planning,
+  30 minutes on environment and provider setup (API keys, Anthropic billing blocker, Gemini quota and
+  timeout issues, Postgres, Langfuse), 1 hour building the agent, harness, API, database and tests, and
+  30 minutes on the four live runs, the v2 iteration, error analysis and the write-up. This is within
+  the 2–3 hour guideline; provider setup and quota limits took a noticeable share of it.
 - **AI assistance:** Built with Claude Code (Anthropic) as a pair programmer. It scaffolded the code,
   tests, prompts and this write-up, ran the live runs and analysed the reports and traces.
 - **What I verified myself:** Environment: set up the Gemini key, Langfuse project and PostgreSQL myself; confirmed no secrets are
