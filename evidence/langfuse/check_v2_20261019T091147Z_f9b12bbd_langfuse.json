@@ -1,0 +1,519 @@
+{
+  "run_id": "f9b12bbd-b52e-48f8-9c98-d984960d8447",
+  "split": "check",
+  "agent_version": "v2",
+  "report": "check_v2_20261019T091147Z_f9b12bbd.json",
+  "traces": 10,
+  "generation_observations": 20,
+  "tool_observations": 10,
+  "trace_scores": 0,
+  "session_scores": [],
+  "answers": [
+    {
+      "answer_id": "A41",
+      "status": "error",
+      "trace_id": "d53161f0f78420345a98beaf352b02aa",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/d53161f0f78420345a98beaf352b02aa",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A41",
+          "level": "ERROR",
+          "status_message": "invalid sentence_index None",
+          "usage": {},
+          "latency_s": 63.941
+        },
+        {
+          "type": "EVENT",
+          "name": "validation_failure",
+          "level": "WARNING",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1555,
+            "output": 22,
+            "total": 1577
+          },
+          "latency_s": 1.312
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5796,
+            "output": 775,
+            "total": 6571
+          },
+          "latency_s": 62.599
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        }
+      ],
+      "scores": []
+    },
+    {
+      "answer_id": "A42",
+      "status": "ok",
+      "trace_id": "e4141e46e75ef52ad2db4eb4c507f902",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/e4141e46e75ef52ad2db4eb4c507f902",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A42",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 68.254
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1558,
+            "output": 22,
+            "total": 1580
+          },
+          "latency_s": 7.055
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5798,
+            "output": 644,
+            "total": 6442
+          },
+          "latency_s": 61.198
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        }
+      ],
+      "scores": []
+    },
+    {
+      "answer_id": "A43",
+      "status": "ok",
+      "trace_id": "0235bd284d07456015475dc601869d70",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/0235bd284d07456015475dc601869d70",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A43",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 74.911
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1539,
+            "output": 22,
+            "total": 1561
+          },
+          "latency_s": 14.083
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5779,
+            "output": 799,
+            "total": 6578
+          },
+          "latency_s": 60.827
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        }
+      ],
+      "scores": []
+    },
+    {
+      "answer_id": "A44",
+      "status": "error",
+      "trace_id": "e138e19a8832cba6df6e9c0c1727b2b8",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/e138e19a8832cba6df6e9c0c1727b2b8",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A44",
+          "level": "ERROR",
+          "status_message": "reason longer than two sentences",
+          "usage": {},
+          "latency_s": 80.372
+        },
+        {
+          "type": "EVENT",
+          "name": "validation_failure",
+          "level": "WARNING",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1565,
+            "output": 22,
+            "total": 1587
+          },
+          "latency_s": 19.101
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5805,
+            "output": 687,
+            "total": 6492
+          },
+          "latency_s": 61.27
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        }
+      ],
+      "scores": []
+    },
+    {
+      "answer_id": "A45",
+      "status": "ok",
+      "trace_id": "d21434772e0bb074ef4371c31654bb15",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/d21434772e0bb074ef4371c31654bb15",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A45",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 86.336
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1560,
+            "output": 21,
+            "total": 1581
+          },
+          "latency_s": 24.835
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5755,
+            "output": 673,
+            "total": 6428
+          },
+          "latency_s": 61.501
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        }
+      ],
+      "scores": []
+    },
+    {
+      "answer_id": "A46",
+      "status": "ok",
+      "trace_id": "6d16ae6a42e797589e4a3e4aacae35f2",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/6d16ae6a42e797589e4a3e4aacae35f2",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A46",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 92.328
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1611,
+            "output": 21,
+            "total": 1632
+          },
+          "latency_s": 30.979
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5806,
+            "output": 688,
+            "total": 6494
+          },
+          "latency_s": 61.347
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.001
+        }
+      ],
+      "scores": []
+    },
+    {
+      "answer_id": "A47",
+      "status": "ok",
+      "trace_id": "81387f66099945065375ab8cee6a64f4",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/81387f66099945065375ab8cee6a64f4",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A47",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 98.493
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1480,
+            "output": 22,
+            "total": 1502
+          },
+          "latency_s": 37.326
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5721,
+            "output": 591,
+            "total": 6312
+          },
+          "latency_s": 61.165
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        }
+      ],
+      "scores": []
+    },
+    {
+      "answer_id": "A48",
+      "status": "ok",
+      "trace_id": "3eb6b6b20dd7d05e9636d31c49aac687",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/3eb6b6b20dd7d05e9636d31c49aac687",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A48",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 104.606
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1557,
+            "output": 22,
+            "total": 1579
+          },
+          "latency_s": 42.999
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5798,
+            "output": 758,
+            "total": 6556
+          },
+          "latency_s": 61.605
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        }
+      ],
+      "scores": []
+    },
+    {
+      "answer_id": "A49",
+      "status": "ok",
+      "trace_id": "00f7c77fdb668590f829fccfc6926710",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/00f7c77fdb668590f829fccfc6926710",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A49",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 111.263
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1507,
+            "output": 22,
+            "total": 1529
+          },
+          "latency_s": 48.794
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5748,
+            "output": 440,
+            "total": 6188
+          },
+          "latency_s": 62.466
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        }
+      ],
+      "scores": []
+    },
+    {
+      "answer_id": "A50",
+      "status": "ok",
+      "trace_id": "3d0e89a50a1c9df3ae0b71f5976789dc",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/3d0e89a50a1c9df3ae0b71f5976789dc",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A50",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 115.927
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1573,
+            "output": 22,
+            "total": 1595
+          },
+          "latency_s": 55.322
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5813,
+            "output": 549,
+            "total": 6362
+          },
+          "latency_s": 60.603
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.001
+        }
+      ],
+      "scores": []
+    }
+  ]
+}

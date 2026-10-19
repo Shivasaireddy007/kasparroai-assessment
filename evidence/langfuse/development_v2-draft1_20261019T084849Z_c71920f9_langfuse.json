@@ -1,0 +1,4039 @@
+{
+  "run_id": "c71920f9-2213-4449-83a0-1a9b846054d6",
+  "split": "development",
+  "agent_version": "v2",
+  "report": "development_v2-draft1_20261019T084849Z_c71920f9.json",
+  "traces": 40,
+  "generation_observations": 80,
+  "tool_observations": 40,
+  "trace_scores": 393,
+  "session_scores": [
+    {
+      "name": "run_joint_f1",
+      "value": 0.6887871853546911
+    },
+    {
+      "name": "run_extraction_f1",
+      "value": 0.7162471395881007
+    },
+    {
+      "name": "run_macro_f1",
+      "value": 0.7354918078898068
+    }
+  ],
+  "answers": [
+    {
+      "answer_id": "A01",
+      "status": "ok",
+      "trace_id": "207d7f3bdba3fea9f305bd0da71c50f5",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/207d7f3bdba3fea9f305bd0da71c50f5",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A01",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 242.345
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1488,
+            "output": 22,
+            "total": 1510
+          },
+          "latency_s": 1.301
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5728,
+            "output": 668,
+            "total": 6396
+          },
+          "latency_s": 241.04
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.001
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.7142857142857143,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.5714285714285714,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 0.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A02",
+      "status": "ok",
+      "trace_id": "16400637be01e04a53ee07d7f0761d68",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/16400637be01e04a53ee07d7f0761d68",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A02",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 253.388
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1530,
+            "output": 21,
+            "total": 1551
+          },
+          "latency_s": 7.199
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5725,
+            "output": 1087,
+            "total": 6812
+          },
+          "latency_s": 246.187
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.001
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.7407407407407407,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.7407407407407407,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A03",
+      "status": "ok",
+      "trace_id": "6444450ab84318cd6fde40fb1964f9b6",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/6444450ab84318cd6fde40fb1964f9b6",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A03",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 254.822
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1498,
+            "output": 21,
+            "total": 1519
+          },
+          "latency_s": 13.201
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5693,
+            "output": 823,
+            "total": 6516
+          },
+          "latency_s": 241.621
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.9411764705882353,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.8235294117647058,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 0.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A04",
+      "status": "ok",
+      "trace_id": "f6033395ef056c9580de000ec1514498",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/f6033395ef056c9580de000ec1514498",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A04",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 262.189
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1593,
+            "output": 22,
+            "total": 1615
+          },
+          "latency_s": 18.887
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5834,
+            "output": 1426,
+            "total": 7260
+          },
+          "latency_s": 243.3
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.7586206896551724,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.6896551724137931,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 0.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A05",
+      "status": "error",
+      "trace_id": "6e4701e02d79005c673196abfa5530ad",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/6e4701e02d79005c673196abfa5530ad",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A05",
+          "level": "ERROR",
+          "status_message": "reason longer than two sentences",
+          "usage": {},
+          "latency_s": 267.032
+        },
+        {
+          "type": "EVENT",
+          "name": "validation_failure",
+          "level": "WARNING",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1464,
+            "output": 22,
+            "total": 1486
+          },
+          "latency_s": 25.032
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5705,
+            "output": 957,
+            "total": 6662
+          },
+          "latency_s": 241.999
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.0,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A06",
+      "status": "error",
+      "trace_id": "784edd7cab010d74630e4a9303dae1db",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/784edd7cab010d74630e4a9303dae1db",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A06",
+          "level": "ERROR",
+          "status_message": "reason longer than two sentences",
+          "usage": {},
+          "latency_s": 273.596
+        },
+        {
+          "type": "EVENT",
+          "name": "validation_failure",
+          "level": "WARNING",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1548,
+            "output": 22,
+            "total": 1570
+          },
+          "latency_s": 31.011
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5788,
+            "output": 1178,
+            "total": 6966
+          },
+          "latency_s": 242.583
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.0,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A07",
+      "status": "ok",
+      "trace_id": "9f914b68985956b8569322da17c6c42f",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/9f914b68985956b8569322da17c6c42f",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A07",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 278.841
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1477,
+            "output": 22,
+            "total": 1499
+          },
+          "latency_s": 37.417
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5717,
+            "output": 960,
+            "total": 6677
+          },
+          "latency_s": 241.423
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.6666666666666666,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.6666666666666666,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A08",
+      "status": "ok",
+      "trace_id": "79d19f8e8d50eed958f8998e546a0c85",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/79d19f8e8d50eed958f8998e546a0c85",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A08",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 284.428
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1524,
+            "output": 22,
+            "total": 1546
+          },
+          "latency_s": 42.856
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5764,
+            "output": 693,
+            "total": 6457
+          },
+          "latency_s": 241.571
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A09",
+      "status": "ok",
+      "trace_id": "c0b615a06b43db8996126065ffdf1870",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/c0b615a06b43db8996126065ffdf1870",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A09",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 290.886
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1501,
+            "output": 21,
+            "total": 1522
+          },
+          "latency_s": 49.059
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5696,
+            "output": 897,
+            "total": 6593
+          },
+          "latency_s": 241.825
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.8888888888888888,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 0.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A10",
+      "status": "ok",
+      "trace_id": "4d6496f0d4872e8957d2a9d0e46aa9b3",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/4d6496f0d4872e8957d2a9d0e46aa9b3",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A10",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 297.108
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1558,
+            "output": 21,
+            "total": 1579
+          },
+          "latency_s": 55.032
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5753,
+            "output": 1051,
+            "total": 6804
+          },
+          "latency_s": 242.073
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.001
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.7407407407407407,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.7407407407407407,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A11",
+      "status": "ok",
+      "trace_id": "8a660cfa75b64a8b27a65ecc2614af24",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/8a660cfa75b64a8b27a65ecc2614af24",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A11",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 302.716
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1541,
+            "output": 22,
+            "total": 1563
+          },
+          "latency_s": 60.871
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5782,
+            "output": 930,
+            "total": 6712
+          },
+          "latency_s": 241.843
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.001
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.7407407407407407,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.7407407407407407,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A12",
+      "status": "ok",
+      "trace_id": "35757f561ed586a2fc90cc7cb6aba13a",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/35757f561ed586a2fc90cc7cb6aba13a",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A12",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 309.297
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1502,
+            "output": 22,
+            "total": 1524
+          },
+          "latency_s": 67.117
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5743,
+            "output": 1087,
+            "total": 6830
+          },
+          "latency_s": 242.179
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.72,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.64,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 0.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A13",
+      "status": "ok",
+      "trace_id": "a8a87074192cb331986e94359435c830",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/a8a87074192cb331986e94359435c830",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A13",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 315.135
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1538,
+            "output": 22,
+            "total": 1560
+          },
+          "latency_s": 73.277
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5779,
+            "output": 963,
+            "total": 6742
+          },
+          "latency_s": 241.856
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.001
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.7407407407407407,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.7407407407407407,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A14",
+      "status": "ok",
+      "trace_id": "718fedbec51d0d4fb81507f7550b7ba3",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/718fedbec51d0d4fb81507f7550b7ba3",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A14",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 320.97
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1505,
+            "output": 22,
+            "total": 1527
+          },
+          "latency_s": 78.997
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5745,
+            "output": 889,
+            "total": 6634
+          },
+          "latency_s": 241.971
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.001
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.72,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.72,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A15",
+      "status": "ok",
+      "trace_id": "67d5c867eb115e477fc733a6010bd209",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/67d5c867eb115e477fc733a6010bd209",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A15",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 326.806
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1528,
+            "output": 22,
+            "total": 1550
+          },
+          "latency_s": 85.17
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5768,
+            "output": 955,
+            "total": 6723
+          },
+          "latency_s": 241.635
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.7407407407407407,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.5925925925925926,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 0.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 0.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A16",
+      "status": "ok",
+      "trace_id": "f7cbee5be2b93eb60195422751669be7",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/f7cbee5be2b93eb60195422751669be7",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A16",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 333.876
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1509,
+            "output": 21,
+            "total": 1530
+          },
+          "latency_s": 90.871
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5704,
+            "output": 1371,
+            "total": 7075
+          },
+          "latency_s": 243.002
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.001
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.72,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.64,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 0.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A17",
+      "status": "ok",
+      "trace_id": "17fc608033d040ec67ac46d9b128ea64",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/17fc608033d040ec67ac46d9b128ea64",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A17",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 339.607
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1589,
+            "output": 21,
+            "total": 1610
+          },
+          "latency_s": 97.033
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5784,
+            "output": 1140,
+            "total": 6924
+          },
+          "latency_s": 242.572
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.001
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.7586206896551724,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.7586206896551724,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A18",
+      "status": "ok",
+      "trace_id": "df88f3836575fa6cb91752350eafa2a5",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/df88f3836575fa6cb91752350eafa2a5",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A18",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 344.931
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1492,
+            "output": 22,
+            "total": 1514
+          },
+          "latency_s": 102.841
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5733,
+            "output": 916,
+            "total": 6649
+          },
+          "latency_s": 242.088
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.001
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.6666666666666666,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.6666666666666666,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A19",
+      "status": "ok",
+      "trace_id": "427daa3ead90d33ad112bef14418b621",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/427daa3ead90d33ad112bef14418b621",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A19",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 350.667
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1524,
+            "output": 22,
+            "total": 1546
+          },
+          "latency_s": 108.895
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5765,
+            "output": 950,
+            "total": 6715
+          },
+          "latency_s": 241.771
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.001
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.7407407407407407,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.7407407407407407,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A20",
+      "status": "ok",
+      "trace_id": "daa9fd8f5dd556356efc6316cc4cde0b",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/daa9fd8f5dd556356efc6316cc4cde0b",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A20",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 356.703
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1468,
+            "output": 22,
+            "total": 1490
+          },
+          "latency_s": 115.367
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5709,
+            "output": 854,
+            "total": 6563
+          },
+          "latency_s": 241.334
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.001
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.6956521739130435,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.6956521739130435,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A21",
+      "status": "ok",
+      "trace_id": "40d7ec4af1f62195f3896ca251fafa8d",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/40d7ec4af1f62195f3896ca251fafa8d",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A21",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 361.915
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1468,
+            "output": 22,
+            "total": 1490
+          },
+          "latency_s": 120.936
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5708,
+            "output": 462,
+            "total": 6170
+          },
+          "latency_s": 240.979
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.7692307692307693,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.6153846153846154,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 0.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A22",
+      "status": "error",
+      "trace_id": "df58162557df5f32c00190694e06577a",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/df58162557df5f32c00190694e06577a",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A22",
+          "level": "ERROR",
+          "status_message": "reason longer than two sentences",
+          "usage": {},
+          "latency_s": 370.023
+        },
+        {
+          "type": "EVENT",
+          "name": "validation_failure",
+          "level": "WARNING",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1536,
+            "output": 22,
+            "total": 1558
+          },
+          "latency_s": 127.021
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5776,
+            "output": 1318,
+            "total": 7094
+          },
+          "latency_s": 243.0
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.0,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A23",
+      "status": "ok",
+      "trace_id": "0389682fb2e4f45e0fc110634241c0f6",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/0389682fb2e4f45e0fc110634241c0f6",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A23",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 374.639
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1452,
+            "output": 21,
+            "total": 1473
+          },
+          "latency_s": 132.857
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5647,
+            "output": 842,
+            "total": 6489
+          },
+          "latency_s": 241.78
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.001
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.6956521739130435,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.6956521739130435,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A24",
+      "status": "ok",
+      "trace_id": "505784cc6df8ac204d73dbc06edd798c",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/505784cc6df8ac204d73dbc06edd798c",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A24",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 384.107
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1540,
+            "output": 21,
+            "total": 1561
+          },
+          "latency_s": 138.991
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5735,
+            "output": 789,
+            "total": 6524
+          },
+          "latency_s": 245.114
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.001
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A25",
+      "status": "error",
+      "trace_id": "b36fc4da199a873d2bdc31bdc0bc6e81",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/b36fc4da199a873d2bdc31bdc0bc6e81",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A25",
+          "level": "ERROR",
+          "status_message": "reason longer than two sentences",
+          "usage": {},
+          "latency_s": 389.271
+        },
+        {
+          "type": "EVENT",
+          "name": "validation_failure",
+          "level": "WARNING",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1485,
+            "output": 21,
+            "total": 1506
+          },
+          "latency_s": 144.936
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5680,
+            "output": 1242,
+            "total": 6922
+          },
+          "latency_s": 244.334
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.001
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.0,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A26",
+      "status": "ok",
+      "trace_id": "1b89a2896bf9365b5978fa7381414301",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/1b89a2896bf9365b5978fa7381414301",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A26",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 482.86
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1529,
+            "output": 22,
+            "total": 1551
+          },
+          "latency_s": 150.983
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5770,
+            "output": 955,
+            "total": 6725
+          },
+          "latency_s": 331.874
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.001
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.7407407407407407,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.7407407407407407,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A27",
+      "status": "ok",
+      "trace_id": "6d72faf6a0a77475ddb1c8928d1cab83",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/6d72faf6a0a77475ddb1c8928d1cab83",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A27",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 399.745
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1504,
+            "output": 22,
+            "total": 1526
+          },
+          "latency_s": 157.001
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5745,
+            "output": 868,
+            "total": 6613
+          },
+          "latency_s": 242.742
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.001
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.72,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.64,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 0.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A28",
+      "status": "ok",
+      "trace_id": "d0b4a468c06ec849d59976fbba5d14d0",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/d0b4a468c06ec849d59976fbba5d14d0",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A28",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 405.036
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1548,
+            "output": 22,
+            "total": 1570
+          },
+          "latency_s": 162.836
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5788,
+            "output": 980,
+            "total": 6768
+          },
+          "latency_s": 242.198
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.7407407407407407,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.7407407407407407,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A29",
+      "status": "ok",
+      "trace_id": "2911465bb4200cdfaaa1e1f3a14b1798",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/2911465bb4200cdfaaa1e1f3a14b1798",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A29",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 410.995
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1513,
+            "output": 22,
+            "total": 1535
+          },
+          "latency_s": 169.161
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5753,
+            "output": 1016,
+            "total": 6769
+          },
+          "latency_s": 241.832
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.001
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.72,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.72,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A30",
+      "status": "ok",
+      "trace_id": "098d2b0891cf52f721f2dd4452cac60e",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/098d2b0891cf52f721f2dd4452cac60e",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A30",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 418.044
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1582,
+            "output": 21,
+            "total": 1603
+          },
+          "latency_s": 174.943
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5777,
+            "output": 960,
+            "total": 6737
+          },
+          "latency_s": 243.099
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.001
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.7586206896551724,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.6896551724137931,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 0.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A31",
+      "status": "ok",
+      "trace_id": "30975da706912691b10d13720dc03b53",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/30975da706912691b10d13720dc03b53",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A31",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 423.292
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1525,
+            "output": 21,
+            "total": 1546
+          },
+          "latency_s": 180.956
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5720,
+            "output": 926,
+            "total": 6646
+          },
+          "latency_s": 242.334
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.7407407407407407,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.7407407407407407,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A32",
+      "status": "ok",
+      "trace_id": "1b2706ebbefecd9dfbcbbffdb223962d",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/1b2706ebbefecd9dfbcbbffdb223962d",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A32",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 429.009
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1539,
+            "output": 21,
+            "total": 1560
+          },
+          "latency_s": 186.846
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5734,
+            "output": 927,
+            "total": 6661
+          },
+          "latency_s": 242.16
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.6923076923076923,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.6923076923076923,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A33",
+      "status": "ok",
+      "trace_id": "8dfd51b41f82c2087f3db093b2e7c0cb",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/8dfd51b41f82c2087f3db093b2e7c0cb",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A33",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 435.131
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1556,
+            "output": 22,
+            "total": 1578
+          },
+          "latency_s": 192.908
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5797,
+            "output": 969,
+            "total": 6766
+          },
+          "latency_s": 242.221
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.001
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.7586206896551724,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.7586206896551724,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A34",
+      "status": "error",
+      "trace_id": "9237fb960f8e196630949bf1d47b8c76",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/9237fb960f8e196630949bf1d47b8c76",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A34",
+          "level": "ERROR",
+          "status_message": "reason longer than two sentences",
+          "usage": {},
+          "latency_s": 441.552
+        },
+        {
+          "type": "EVENT",
+          "name": "validation_failure",
+          "level": "WARNING",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1467,
+            "output": 22,
+            "total": 1489
+          },
+          "latency_s": 198.931
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5708,
+            "output": 1233,
+            "total": 6941
+          },
+          "latency_s": 242.62
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.0,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A35",
+      "status": "ok",
+      "trace_id": "0f1bdb34d84369611e9ab70e306aa7e2",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/0f1bdb34d84369611e9ab70e306aa7e2",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A35",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 447.355
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1523,
+            "output": 22,
+            "total": 1545
+          },
+          "latency_s": 205.11
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5763,
+            "output": 1162,
+            "total": 6925
+          },
+          "latency_s": 242.243
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.7407407407407407,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.6666666666666666,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 0.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A36",
+      "status": "ok",
+      "trace_id": "efa187ed14132cba188bf9b536079b18",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/efa187ed14132cba188bf9b536079b18",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A36",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 455.384
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1467,
+            "output": 22,
+            "total": 1489
+          },
+          "latency_s": 211.066
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5707,
+            "output": 876,
+            "total": 6583
+          },
+          "latency_s": 244.303
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.001
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.6956521739130435,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.6956521739130435,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A37",
+      "status": "error",
+      "trace_id": "6b01a7955a8b0a3a817cfb7967e5eb63",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/6b01a7955a8b0a3a817cfb7967e5eb63",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A37",
+          "level": "ERROR",
+          "status_message": "reason longer than two sentences",
+          "usage": {},
+          "latency_s": 460.322
+        },
+        {
+          "type": "EVENT",
+          "name": "validation_failure",
+          "level": "WARNING",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1543,
+            "output": 22,
+            "total": 1565
+          },
+          "latency_s": 216.813
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5783,
+            "output": 1482,
+            "total": 7265
+          },
+          "latency_s": 243.507
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.001
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.0,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A38",
+      "status": "ok",
+      "trace_id": "a4886c03eb8cce243979bacc8eabdd58",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/a4886c03eb8cce243979bacc8eabdd58",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A38",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 464.315
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1485,
+            "output": 21,
+            "total": 1506
+          },
+          "latency_s": 222.854
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5680,
+            "output": 580,
+            "total": 6260
+          },
+          "latency_s": 241.459
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A39",
+      "status": "ok",
+      "trace_id": "fe82fb011161edf3d28ed90dd8256e66",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/fe82fb011161edf3d28ed90dd8256e66",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A39",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 470.032
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1530,
+            "output": 21,
+            "total": 1551
+          },
+          "latency_s": 228.998
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5725,
+            "output": 559,
+            "total": 6284
+          },
+          "latency_s": 241.033
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.0
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        }
+      ]
+    },
+    {
+      "answer_id": "A40",
+      "status": "ok",
+      "trace_id": "605400ef81cdf8b7e96d7518d84d8db6",
+      "trace_url": "https://cloud.langfuse.com/project/cmvez0uj604k8ad0le6zjt350/traces/605400ef81cdf8b7e96d7518d84d8db6",
+      "observations": [
+        {
+          "type": "AGENT",
+          "name": "classify A40",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 476.914
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 1",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 1515,
+            "output": 22,
+            "total": 1537
+          },
+          "latency_s": 235.086
+        },
+        {
+          "type": "GENERATION",
+          "name": "turn 2",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {
+            "input": 5756,
+            "output": 996,
+            "total": 6752
+          },
+          "latency_s": 241.826
+        },
+        {
+          "type": "TOOL",
+          "name": "get_brand_facts",
+          "level": "DEFAULT",
+          "status_message": "",
+          "usage": {},
+          "latency_s": 0.001
+        }
+      ],
+      "scores": [
+        {
+          "name": "extraction_f1",
+          "value": 0.72,
+          "comment": null
+        },
+        {
+          "name": "joint_f1",
+          "value": 0.72,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        },
+        {
+          "name": "label_correct",
+          "value": 1.0,
+          "comment": null
+        }
+      ]
+    }
+  ]
+}
