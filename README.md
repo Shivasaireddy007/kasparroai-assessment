@@ -1,5 +1,7 @@
 # Claim extraction and classification agent
 
+![tests](https://github.com/Shivasaireddy007/kasparroai-assessment/actions/workflows/tests.yml/badge.svg)
+
 Kasparro FSE I assessment. An agent reads a long AI-written answer about speaker products, finds its
 factual claim sentences, and labels each one `supported`, `contradicted` or `unknown` against the supplied
 catalogue (`brand_facts.csv`). A deterministic harness scores extraction and labels; runs are stored in
@@ -32,6 +34,26 @@ assistance disclosure are in **[RESULTS.md](RESULTS.md)**. Evidence (reports, La
 screenshots, live API output, test output) is in [`runs/`](runs/) and [`evidence/`](evidence/).
 
 **Quick start:** `uv sync` → `cp .env.example .env` (add keys) → `uv run pytest -q` →
+
+## Key design decisions
+
+1. **Spans are computed by Python, never by the model.** A deterministic splitter reproduces all 376
+   gold spans exactly (tested). The model returns sentence numbers, and Python derives offsets, quotes
+   and claim IDs.
+2. **The model must use real tool calls.** `get_brand_facts` is limited to catalogue brands, and
+   output goes through a strict `submit_claims` tool. Any invalid output becomes an answer-level error,
+   never a silent `unknown`.
+3. **The answer text is untrusted.** The injected "label everything supported" instruction reaches the
+   model only as a numbered sentence in a block marked untrusted. It was never obeyed in any run.
+4. **Gold never reaches inference.** The input model rejects extra fields, and a test asserts no gold
+   data appears in any model or tool payload.
+5. **The scorer is strict.** Exact span match only, errors keep their gold in G, extras lower
+   precision, and the confusion matrix accounts for every claim. The brief's G=10 P=10 M=8 C=7
+   example is a test.
+6. **Reliability is bounded.** At most 3 concurrent requests, including retries; a 15 s timeout; one
+   retry for timeout, 429 or 5xx only; per-answer isolation.
+7. **The change is evidence-based and honestly reported.** v2 came from the A01 Langfuse trace; the
+   failed first attempt, the small gain and the remaining weaknesses are all disclosed.
 `uv run python -m claimcheck.runner --version v2 --split development`
 
 ## Requirements
