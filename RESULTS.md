@@ -142,6 +142,13 @@ precision. v2 never extracted it in either split.
   15 s timeout and a 20-requests-per-day free-tier cap, which is why the model was switched to
   `gemini-3.5-flash-lite` before the v1 run. All four runs use the same model.
 
+- **Latency fields include time spent queued (measurement flaw, disclosed).** All answers in a run
+  start at once and wait at the request gate (max 3 active, 6 s spacing). The trace durations, the
+  per-attempt `ms` values and the reports' `latency_ms` start counting before that wait, so they include
+  queue time. For example, A01's v1 turn-2 generation shows 4 m 01 s, almost all of it queued. The
+  15 s timeout is not affected: `asyncio.wait_for` wraps only the provider call after the gate is
+  entered. A fix (start timing after the gate) was not applied, to keep the frozen versions unchanged.
+
 ## Tests
 
 `uv run pytest -q`: 60 tests run and pass (output in `evidence/pytest.txt`). They cover CSV parsing
@@ -169,7 +176,12 @@ Evidence for reviewers without Langfuse access:
   `label_correct` per matched claim (v1: 80 + 269 = 349, v2: 80 + 262 = 342); check runs have 0 scores.
 - `evidence/exchanges/`: sanitized model/tool exchanges (user message, tool schemas, tool calls,
   tool results summary, validation event) for the v1 A01 diagnosis trace, v2 A01, and v2 check A45.
-- Screenshots: `evidence/screenshots/` (TO ADD: trace view of the v1 A01 trace and the scores view).
+- Screenshots (`evidence/screenshots/`): `v1_A01_trace_turn2.png` shows the v1 A01 trace tree
+  (agent span marked Error, `turn 1` and `turn 2` generation observations, the `get_brand_facts`
+  tool observation, the `validation_failure` warning event), the model `gemini-3.5-flash-lite`, token
+  and cost data, and the trace-level scores `extraction_f1` and `joint_f1` with the `v1` and
+  `development` tags. `v1_A01_trace_scores.png` shows the same trace; the observation-level Scores tab
+  is empty because the scores are attached to the trace (visible in the header), not to the generation.
 
 ## Time, AI assistance and verification
 
