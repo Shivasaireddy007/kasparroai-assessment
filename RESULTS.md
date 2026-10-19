@@ -261,9 +261,22 @@ Evidence for reviewers without Langfuse access:
 
 ## Time, AI assistance and verification
 
-- **Time spent:** TO FILL IN.
+- **Time spent:** About 2.5 hours in total. Roughly 30 minutes reading the brief and planning, 30 minutes
+on environment and provider setup (API keys, Anthropic billing blocker, Gemini quota and timeout issues, Postgres, Langfuse), 1.5 hours building the agent, harness, API, database and tests, and
+1/2 hour on the four live runs, the v2 iteration, error analysis and the write-up. This is somewhat over the 2–3 hour guideline; the overrun was mainly provider setup and quota limits.
 - **AI assistance:** Built with Claude Code (Anthropic) as a pair programmer. It scaffolded the code,
   tests, prompts and this write-up, ran the live runs and analysed the reports and traces.
-- **What I verified myself:** TO FILL IN (e.g. read the scorer against the spec, reran `pytest`,
-  inspected the A01 trace in Langfuse, spot-checked labels in the reports).
+- **What I verified myself:** Environment: set up the Gemini key, Langfuse project and PostgreSQL myself; confirmed no secrets are
+  in the repo (`.env` is git-ignored; searched for key prefixes).
+- Tests: ran `uv run pytest -q` locally (60 passed) and read the scorer tests against the brief,
+  including the G=10 P=10 M=8 C=7 example.
+- Scorer: read `scoring.py` against the metric definitions (exact span match, P/R/F1 denominators,
+  errors keep their gold in G, extras add to P).
+- Labels: hand-checked several claims against `brand_facts.csv` (e.g. A01 price difference
+  2499 − 1299 = 1200 → supported; StoneWave Go 16 h = 960 min, so "1020 minutes" → contradicted).
+- Traces: inspected the v1 A01 trace that drove the diagnosis and the v2 A07 trace with its scores in
+  Langfuse; took the screenshots.
+- Decisions: reviewed the first v2 regression and chose to revise once and disclose it; confirmed both
+  versions were frozen before the check runs and that check reports have null quality metrics.
+- API: started the server and called `/classify` from the `/docs` page.
 - **Unfinished work:** see "What would come next". React UI not built (optional).
