@@ -5,7 +5,34 @@ factual claim sentences, and labels each one `supported`, `contradicted` or `unk
 catalogue (`brand_facts.csv`). A deterministic harness scores extraction and labels; runs are stored in
 PostgreSQL, traced in Langfuse, and exposed through a thin FastAPI service.
 
-Results, the v1 → v2 change and the write-up are in [RESULTS.md](RESULTS.md).
+## Summary
+
+| Development (A01–A40, 376 gold claims) | v1 | v2 |
+|---|---|---|
+| **Joint F1** (span and label both correct) | 0.757 | **0.781** |
+| Extraction F1 | 0.796 | 0.821 |
+| Macro F1 (supported / contradicted / unknown) | 0.762 | 0.777 |
+| Extra predictions | 31 | 0 |
+| Answer-level errors | 9 / 40 | 8 / 40 |
+
+- **The diagnosis came from a Langfuse trace.** The A01 trace showed the model doing its arithmetic
+  and self-correction inside `reason`, which broke the two-sentence limit and invalidated whole answers.
+- **The change.** v2 gives the model a discarded scratch `working` field, and `reason` must be one
+  final sentence. A first v2 attempt regressed; it is kept and disclosed.
+- **The honest result.** v2 is a small gain from precision. The targeted error is only partly fixed,
+  and v2 now misses more claims whose facts are absent from the catalogue. With one run each, the gain
+  may be within run-to-run noise.
+- **Check split (A41–A50).** Both frozen versions ran on it; predictions are saved with quality fields
+  null.
+- **Stack.** Gemini `gemini-3.5-flash-lite` (free tier), PostgreSQL, FastAPI, Langfuse; 60 tests
+  passing.
+
+Full results, the trace diagnosis, error analysis by difficulty tag, regressions, limitations and the AI
+assistance disclosure are in **[RESULTS.md](RESULTS.md)**. Evidence (reports, Langfuse exports,
+screenshots, live API output, test output) is in [`runs/`](runs/) and [`evidence/`](evidence/).
+
+**Quick start:** `uv sync` → `cp .env.example .env` (add keys) → `uv run pytest -q` →
+`uv run python -m claimcheck.runner --version v2 --split development`
 
 ## Requirements
 
