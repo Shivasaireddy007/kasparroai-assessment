@@ -207,3 +207,14 @@ async def test_min_interval_spaces_request_starts():
     await asyncio.gather(*(go() for _ in range(4)))
     gaps = [b - a for a, b in zip(starts, starts[1:])]
     assert all(g >= 0.04 for g in gaps)
+
+
+async def test_v2_scratch_working_is_discarded_and_v1_schema_unchanged():
+    from claimcheck.agent import tool_schemas
+
+    v1_items = tool_schemas(False)[1]["parameters"]["properties"]["claims"]["items"]
+    v2_items = tool_schemas(True)[1]["parameters"]["properties"]["claims"]["items"]
+    assert "working" not in v1_items["properties"] and "working" in v2_items["required"]
+    entry = {**claim(3), "working": "2499 - 1299 = 1200. Wait, re-check. Still 1200. Fine."}
+    o = await classify_answer(inp(), AGENT_VERSIONS["v2"], FakeProvider(standard([entry])), RequestGate(), retry_delay_s=0)
+    assert o.status == "ok" and "working" not in o.claims[0].model_dump()

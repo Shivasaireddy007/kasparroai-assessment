@@ -35,13 +35,18 @@ MAX_ACTIVE_REQUESTS = 3
 class AgentVersion:
     name: str
     prompt_file: str
+    scratch_field: bool = False
 
     @property
     def prompt(self) -> str:
         return (PROMPT_DIR / self.prompt_file).read_text(encoding="utf-8")
 
 
-AGENT_VERSIONS = {"v1": AgentVersion("v1", "v1.md")}
+AGENT_VERSIONS = {
+    "v1": AgentVersion("v1", "v1.md"),
+    # v2: separate scratch `working` field so checks and arithmetic stay out of `reason` (see RESULTS.md).
+    "v2": AgentVersion("v2", "v2.md", scratch_field=True),
+}
 
 
 class AgentInput(BaseModel):
@@ -89,7 +94,22 @@ class RequestGate:
         self._sem.release()
 
 
-def tool_schemas() -> list[dict[str, Any]]:
+def tool_schemas(scratch_field: bool = False) -> list[dict[str, Any]]:
+    item_props: dict[str, Any] = {
+        "sentence_index": {"type": "integer"},
+        "label": {"type": "string", "enum": list(LABELS)},
+        "fact_ids": {"type": "array", "items": {"type": "string"}},
+        "reason": {"type": "string"},
+    }
+    required = ["sentence_index", "label", "fact_ids", "reason"]
+    if scratch_field:
+        item_props = {
+            "sentence_index": item_props["sentence_index"],
+            "working": {"type": "string", "description": "Scratch arithmetic and checks; discarded."},
+            **{k: v for k, v in item_props.items() if k != "sentence_index"},
+        }
+        item_props["reason"] = {"type": "string", "description": "Final conclusion in one short sentence."}
+        required = ["sentence_index", "working", "label", "fact_ids", "reason"]
     return [
         {
             "name": "get_brand_facts",
@@ -108,16 +128,7 @@ def tool_schemas() -> list[dict[str, Any]]:
                 "properties": {
                     "claims": {
                         "type": "array",
-                        "items": {
-                            "type": "object",
-                            "properties": {
-                                "sentence_index": {"type": "integer"},
-                                "label": {"type": "string", "enum": list(LABELS)},
-                                "fact_ids": {"type": "array", "items": {"type": "string"}},
-                                "reason": {"type": "string"},
-                            },
-                            "required": ["sentence_index", "label", "fact_ids", "reason"],
-                        },
+                        "items": {"type": "object", "properties": item_props, "required": required},
                     }
                 },
                 "required": ["claims"],
@@ -264,7 +275,7 @@ async def classify_answer(
     if inp.brand_id not in known_brands():
         return finish("error", kind="unknown_brand", msg=f"unknown primary brand_id: {inp.brand_id!r}")
 
-    tools = tool_schemas()
+    tools = tool_schemas(version.scratch_field)
     allowed = {t["name"] for t in tools}
     conv = provider.new_conversation(version.prompt, build_user_message(inp))
     try:
