@@ -28,6 +28,8 @@ class Tracer(Protocol):
 
     def score(self, trace_id: str, name: str, value: float, comment: str | None = None, metadata: Any = None) -> None: ...
 
+    def score_run(self, run_id: str, name: str, value: float) -> None: ...
+
     def flush(self) -> None: ...
 
 
@@ -57,6 +59,9 @@ class NoopTracer:
         return _NoopTrace()
 
     def score(self, trace_id: str, name: str, value: float, comment: str | None = None, metadata: Any = None) -> None:
+        pass
+
+    def score_run(self, run_id: str, name: str, value: float) -> None:
         pass
 
     def flush(self) -> None:
@@ -128,6 +133,10 @@ class LangfuseTracer:
 
     def score(self, trace_id: str, name: str, value: float, comment: str | None = None, metadata: Any = None) -> None:
         self._client.create_score(trace_id=trace_id, name=name, value=value, comment=comment, metadata=metadata, data_type="NUMERIC")
+
+    def score_run(self, run_id: str, name: str, value: float) -> None:
+        # Traces carry session_id=run_id, so run-level metrics attach to that session.
+        self._client.create_score(session_id=run_id, name=name, value=value, data_type="NUMERIC")
 
     def trace_url(self, trace_id: str) -> str | None:
         try:
