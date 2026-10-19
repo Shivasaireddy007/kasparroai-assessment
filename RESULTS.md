@@ -176,12 +176,17 @@ Evidence for reviewers without Langfuse access:
   `label_correct` per matched claim (v1: 80 + 269 = 349, v2: 80 + 262 = 342); check runs have 0 scores.
 - `evidence/exchanges/`: sanitized model/tool exchanges (user message, tool schemas, tool calls,
   tool results summary, validation event) for the v1 A01 diagnosis trace, v2 A01, and v2 check A45.
-- Screenshots (`evidence/screenshots/`): `v1_A01_trace_turn2.png` shows the v1 A01 trace tree
-  (agent span marked Error, `turn 1` and `turn 2` generation observations, the `get_brand_facts`
-  tool observation, the `validation_failure` warning event), the model `gemini-3.5-flash-lite`, token
-  and cost data, and the trace-level scores `extraction_f1` and `joint_f1` with the `v1` and
-  `development` tags. `v1_A01_trace_scores.png` shows the same trace; the observation-level Scores tab
-  is empty because the scores are attached to the trace (visible in the header), not to the generation.
+- Screenshots (`evidence/screenshots/`):
+  - `v1_A01_trace_turn2.png`: the v1 A01 diagnosis trace. The agent span is marked Error, with
+    `turn 1` and `turn 2` generation observations, the `get_brand_facts` tool observation and the
+    `validation_failure` warning event. It also shows model `gemini-3.5-flash-lite`, token and cost data,
+    trace-level scores `extraction_f1 = 0` and `joint_f1 = 0`, and the `v1` and `development` tags.
+  - `v2_A07_trace_scores.png`: the v2 A07 trace (the answer containing the injected instruction). Its
+    Scores tab lists `extraction_f1 = 1.00`, `joint_f1 = 1.00` and eight `label_correct = 1.00` scores,
+    each commented with its claim span ID.
+  - `v2_A07_trace_output.png`: the same trace's input (answer ID, brand, question) and output (status
+    ok, eight accepted claims, null error fields).
+  Durations shown in these screenshots include time queued at the request gate (see Reliability notes).
 
 ## Time, AI assistance and verification
 
